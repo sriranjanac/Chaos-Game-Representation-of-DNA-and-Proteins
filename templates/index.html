@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chaos Game Representation</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+    <link rel="icon" href="{{ url_for('static', filename='favicon.jpg') }}">
+</head>
+<body>
+    <h1>Chaos Game Representation</h1>
+
+    <div class="overall-container">
+    <form action="/result" method="post" enctype="multipart/form-data">
+
+      <div class="form-row">
+        <label for="sequence_type"><h3>Select sequence type</h3></label>
+        <select id="sequence_type" name="sequence_type" required>
+            <option value="" disabled selected>Select an option</option>
+            <option value="DNA">DNA sequence</option>
+            <option value="Protein">Protein sequence</option>
+        </select>    
+      </div>
+
+      <div class="form-row">
+        <div class="file-upload-container">
+          <label for="fasta_file" id="file-label"><h3>Upload FASTA file</h3></label>
+          <input type="file" id="fasta_file" name="fasta_file" accept=".fasta" required onchange="displayFileName()">
+          <span id="file-name" class="file-name"></span>
+      </div>
+      </div>
+      <input type="submit" value="Submit">
+
+    </form>
+  </div>
+
+  <script>
+    function displayFileName() {
+        const fileInput = document.getElementById('fasta_file');
+        const fileNameSpan = document.getElementById('file-name');
+
+        // Get the file name from the input
+        const fileName = fileInput.files[0].name;
+        fileNameSpan.textContent = fileName;
+
+        // Hide the input element after file selection
+        fileInput.style.display = 'none';
+    }
+    </script>
+</body>
+</html>
