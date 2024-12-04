@@ -1,7 +1,7 @@
 # Chaos Game Representation of DNA and Proteins
 
 ## 📖 **Overview**
-- This project implements a Chaos Game Representation (CGR) tool for DNA and protein sequence visualization. CGR is a fractal-based method that converts biological sequences into graphical patterns, enabling the analysis of sequence motifs, structure, and composition.
+This project implements a Chaos Game Representation (CGR) tool for DNA and protein sequence visualization. CGR is a fractal-based method that converts biological sequences into graphical patterns, enabling the analysis of sequence motifs, structure, and composition.
 
 The tool is a web-based application developed using the Flask framework. It allows users to upload biological sequence files in FASTA format and generate CGR plots for both DNA and protein sequences.
 
