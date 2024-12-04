@@ -10,17 +10,16 @@ The tool is a web-based application developed using the Flask framework. It allo
 - Generate CGR plots for DNA using a square-based mapping of nucleotides.
 - Generate CGR plots for proteins using a dodecahedron-based mapping of amino acids.
 
-  ![image](https://github.com/user-attachments/assets/f606cf8e-37d3-401e-8c39-c90199f1836d)
+  ![image](https://github.com/user-attachments/assets/f606cf8e-37d3-401e-8c39-c90199f1836d "Flask Web Page")
   
-  **FlasK Web Page**
+  
 
-  ![image](https://github.com/user-attachments/assets/cdb66b1a-adab-4753-a5d8-bac5f4eec5ba)
+  ![image](https://github.com/user-attachments/assets/cdb66b1a-adab-4753-a5d8-bac5f4eec5ba "CGR of DNA")
   
-  **CGR of DNA**
 
-  ![image](https://github.com/user-attachments/assets/30820adf-e4e7-4d11-9135-535de47ae3f4)
+  ![image](https://github.com/user-attachments/assets/30820adf-e4e7-4d11-9135-535de47ae3f4 "CGR of Proteins")
   
-  **CGR of Proteins**
+ 
 
 
 
